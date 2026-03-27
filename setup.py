@@ -8,16 +8,16 @@ setup(
     author_email='snpowers@cs.cmu.edu',
     packages=find_packages(),
     py_modules=['continual_rl.available_policies', 'continual_rl.experiment_specs'],
-    install_requires=['setuptools==59.5.0',
-                      'uuid',
-                      'numpy',
-                      'tensorboard',
-                      'torch-ac',
-                      'gym[atari]<=0.25.2',
-                      'atari-py==0.2.5',
-                      'moviepy',
-                      'dotmap',
-                      'psutil',
-                      'opencv-python'
-                    ]
+    python_requires=">=3.8,<3.11",
+    install_requires=[
+        "numpy==1.23.5",
+        "tensorboard",
+        "torch-ac",
+        "gym[atari,accept-rom-license]==0.25.2",
+        "ale-py>=0.7,<0.9",
+        "moviepy",
+        "dotmap",
+        "psutil",
+        "opencv-python",
+    ],
 )

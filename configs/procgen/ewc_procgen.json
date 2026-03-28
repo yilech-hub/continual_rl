@@ -10,7 +10,7 @@
         "learning_rate": 4e-4,
         "num_learner_threads": 2,
         "ewc_lambda": 10000,
-        "replay_buffer_frames": 1.5e5,
+        "replay_buffer_frames": 1000000,
         "ewc_per_task_min_frames": 200000,
         "large_file_path": "/dev/shm"
     }
